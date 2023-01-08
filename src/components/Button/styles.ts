@@ -18,14 +18,14 @@ background-color: ${({ theme, type}) => type === 'PRIMARY' ? theme.COLORS.GREEN_
 border-radius: 6px;
 justify-content: center;
 align-items: center;
-padding: 20px;
+padding: 10px;
 
 
 `;
 
 export const Title = styled.Text`
 ${({theme}) => css`
-font-size: => ${theme.FONT_SIZE.MD}px;
+font-size:  ${theme.FONT_SIZE.MD}px;
 color: ${ theme.COLORS.WHITE};
 font-family: ${theme.FONT_FAMILY.BOLD};`
 

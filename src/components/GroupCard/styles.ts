@@ -15,7 +15,7 @@ height: 90px;
 background-color: ${({theme })=> theme.COLORS.GRAY_500};
 flex-direction: row;
 align-items: center;
-border: 2px solid aqua;
+
 border-radius: 10px;
 
 padding: 22px;

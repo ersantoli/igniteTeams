@@ -7,7 +7,7 @@ export const Container = styled.View`
 
 width: 100%;
 height: 60px;
-border: 2px solid aqua;
+
 
 flex-direction: row;
 align-items: center;

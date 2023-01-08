@@ -3,7 +3,9 @@ import styled, { css } from "styled-components/native";
 export const Container = styled.View`
 
 width: 100%;
-margin: 32px 0;
+margin:  0 auto;
+align-items: center;
+
 `;
 
 export const Title = styled.Text`
@@ -13,13 +15,14 @@ ${({theme})=> css`
 font-size: ${theme.FONT_SIZE.XL}px;
 font-family:${theme.FONT_FAMILY.BOLD};
 color: ${theme.COLORS.WHITE};`};
-
+margin-top: 10px;
 `;
 
 export const Subtitle = styled.Text`
 text-align: center;
 ${({theme})=> css`
 
+margin-top: 10px;
 font-size: ${theme.FONT_SIZE.MD}px;
 font-family:${theme.FONT_FAMILY.REGULAR};
 color: ${theme.COLORS.GRAY_300};
