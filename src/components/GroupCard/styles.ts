@@ -22,10 +22,10 @@ padding: 22px;
 margin-bottom:12px;
 
 
-`
+`;
 export const Title = styled.Text`
 ${({theme })=> css`
-
+width: 100%;
 font-size: ${theme.FONT_SIZE.MD}px;
 color: ${theme.COLORS.GRAY_200};
 font-family: ${theme.FONT_FAMILY.REGULAR};

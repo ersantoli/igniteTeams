@@ -8,12 +8,14 @@ type Props = TouchableOpacityProps & {
     icon: keyof typeof MaterialIcons.glyphMap;
     type?: ButtonIconStyleProps;
 }
-export function ButtonIcon({ icon,type='PRIMARY',...rest }: Props) {
+export function ButtonIcon({ icon, type= 'PRIMARY', ...rest }: Props) {
     return (
         <Container {...rest}>
 
             <Icon
-                name={icon} type={type} />
+                name={icon} 
+                type={type} 
+                />
 
         </Container>
     );

@@ -46,6 +46,15 @@ console.log(error)
   }
 
 }
+
+
+
+function handleOpenGroup(group:string){
+  navigation.navigate('players', {group})
+
+
+
+}
 useFocusEffect(useCallback(()=> {
  console.log("UseFocusEffect executou")
   fetchGroups();
@@ -67,6 +76,7 @@ useFocusEffect(useCallback(()=> {
        renderItem={({ item} )=> (
         <GroupCard 
         title={item}
+        onPress={()=> handleOpenGroup(item)}
         />
        )}
        contentContainerStyle={groups.length === 0 && {flex:1}}
@@ -77,6 +87,7 @@ useFocusEffect(useCallback(()=> {
        )}
        showsVerticalScrollIndicator={false}
        />
+
 
        <Button
        title="Criar novas turmas"
